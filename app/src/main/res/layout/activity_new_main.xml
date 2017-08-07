@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_new_main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/splashColor"
+    tools:context="mohammadicenter.com.mohammadicdcenter.activities.Activities.NewMainActivity">
+
+    <!-- Start Roza-e-RASOOL PIC -->
+
+    <RelativeLayout
+        android:layout_centerHorizontal="true"
+
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:id="@+id/mainFirstLayout"
+        >
+        <RelativeLayout
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:id="@+id/relativeLayout7">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/roza_rasool"
+                android:paddingBottom="10dp"
+                />
+        </RelativeLayout>
+        <!-- Add Main LOGO  -->
+        <RelativeLayout
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/relativeLayout7"
+            android:layout_toEndOf="@+id/relativeLayout7"
+            android:id="@+id/relativeLayout9">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/ico"
+                android:paddingBottom="25dp"
+                android:paddingTop="25dp"
+                />
+        </RelativeLayout>
+        <!-- Add Center Logo picture-->
+        <RelativeLayout
+            android:layout_width="90dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:id="@+id/centerLogopic"
+            android:layout_toRightOf="@+id/relativeLayout9"
+            android:layout_toEndOf="@+id/relativeLayout9">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/center_logo"
+                android:paddingBottom="25dp"
+                android:paddingTop="25dp"
+                />
+        </RelativeLayout>
+        <!-- Add Main LOGO  -->
+        <RelativeLayout
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/centerLogopic"
+            android:layout_toEndOf="@+id/centerLogopic"
+            android:id="@+id/secontimelogo">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/ico"
+                android:paddingBottom="25dp"
+                android:paddingTop="25dp"
+                />
+        </RelativeLayout>
+        <!--  Last Pic -->
+        <RelativeLayout
+            android:layout_width="85dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/secontimelogo"
+            android:layout_toEndOf="@+id/secontimelogo"
+            >
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/makkah"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                />
+        </RelativeLayout>
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1.5dp"
+        android:id="@+id/seratorLayoutfirst"
+        android:layout_below="@id/mainFirstLayout"
+        android:background="@color/background">
+    </View>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:background="@color/marqueeColor"
+        android:layout_below="@+id/seratorLayoutfirst"
+        android:id="@+id/NewsLayout"
+        >
+        <TextView
+            android:text="@string/islam"
+            android:singleLine="true"
+            android:ellipsize="marquee"
+            android:freezesText="true"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:id="@+id/latestNews"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:scrollHorizontally="true"
+            android:layout_gravity="center"
+            android:textColor="@color/marqueeText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+</LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1.5dp"
+        android:id="@+id/seratorLayoutsecond"
+        android:layout_below="@id/NewsLayout"
+        android:background="@color/background">
+    </View>
+    <!-- Banners -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_below="@id/seratorLayoutsecond"
+        android:id="@+id/linearLayout">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/banner_1"
+            />
+    </LinearLayout>
+    <!-- Video Streaming -->
+    <View android:layout_width="300dp"
+        android:layout_height="1.5dp"
+
+        android:background="@color/background"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/videoView_liveStream"
+        >
+
+    </View>
+
+    <WebView
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:id="@+id/videoView_liveStream"
+        android:layout_below="@+id/linearLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_centerInParent="true"
+
+        />
+    <View android:layout_width="300dp"
+        android:layout_height="1.5dp"
+
+        android:background="@color/background"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/videoView_liveStream"
+        android:id="@+id/view">
+
+    </View>
+
+    <!-- Button Layout -->
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Netroxtech IT Company"
+        android:textColor="@color/netroxtech"
+        android:background="@drawable/text_box_border"
+        android:layout_centerHorizontal="true"
+        android:paddingLeft="5dp"
+        android:onClick="goTonetroxtechWebistNewAct"
+        android:paddingRight="5dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:layout_alignParentBottom="true" />
+
+    <View android:layout_width="1.5dp"
+        android:layout_height="202dp"
+        android:background="@color/background"
+        android:layout_alignBottom="@+id/view"
+        android:layout_toRightOf="@+id/videoView_liveStream"
+        android:layout_toEndOf="@+id/videoView_liveStream"
+        android:id="@+id/view2">
+    </View>
+
+    <View android:layout_width="1.5dp"
+        android:layout_height="202dp"
+        android:background="@color/background"
+        android:layout_alignBottom="@+id/view"
+        android:layout_toLeftOf="@+id/videoView_liveStream"
+        android:layout_toStartOf="@+id/videoView_liveStream"
+        android:id="@+id/view3">
+    </View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:id="@+id/lastlayout"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="28dp">
+        <!--  Video Lecture Button -->
+        <RelativeLayout
+            android:layout_width="90dp"
+            android:layout_height="match_parent"
+            android:onClick="setVideoLectures"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:text="Video Lectures"
+                android:textSize="12dp"
+                android:gravity="center"
+                android:textColor="@color/textColor"
+                android:paddingRight="5dp"
+                android:id="@+id/watch_vedio_button_newActiviity"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+               />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/videoLecture_Image"
+                android:src="@drawable/molveis"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+        </RelativeLayout>
+        <!-- Go  to Website -->
+        <RelativeLayout
+
+            android:layout_width="80dp"
+            android:onClick="goToMyWebsite"
+            android:layout_height="match_parent"
+            >
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/WebsiteVisit"
+                android:src="@drawable/globe_logoo"
+
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:text="Website"
+                android:textSize="12dp"
+                android:id="@+id/go_to_website_newActivity"
+                android:textColor="@color/textColor"
+                android:gravity="center"
+
+                android:layout_marginLeft="10dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+        <!-- Contact Us -->
+        <RelativeLayout
+
+            android:layout_width="80dp"
+            android:onClick="goToContact"
+            android:layout_height="match_parent"
+            >
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/contactUs"
+                android:src="@drawable/phone_icon"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:text="Contact US"
+                android:textSize="12dp"
+                android:textColor="@color/textColor"
+               android:gravity="center"
+                android:id="@+id/contactus_newActivity"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginLeft="1dp"
+
+                />
+        </RelativeLayout>
+        <!-- Facebook -->
+        <RelativeLayout
+
+            android:layout_width="63dp"
+            android:onClick="goToFacebook"
+            android:layout_height="match_parent"
+            >
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/Facebook"
+                android:src="@drawable/fb"
+                android:layout_marginLeft="3dp"
+                android:layout_marginBottom="5dp"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="21dp"
+                android:text="Facebook"
+                android:textSize="12dp"
+                android:textColor="@color/textColor"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+
+                android:layout_marginLeft="10dp"
+                android:id="@+id/fb_button_newActiviity" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_contact_us"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/splashColor"
+    tools:context="mohammadicenter.com.mohammadicdcenter.activities.Activities.ContactUs">
+    <include
+        layout="@layout/header_layout"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:id="@+id/include" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/relativeLayout11"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="35dp">
+        <android.support.v7.widget.CardView
+            android:id="@+id/card_vie6"
+            android:layout_gravity="center"
+            android:layout_width="100dp"
+            android:layout_height="150dp"
+            card_view:cardCornerRadius="4dp"
+            android:background="@color/socialLink"
+            android:layout_alignParentLeft="true">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/jhoota2"
+                />
+
+
+        </android.support.v7.widget.CardView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mohammad USMAN"
+            android:textColor="@color/textColor"
+            android:layout_marginRight="54dp"
+            android:layout_marginEnd="54dp"
+            android:id="@+id/textView89"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            android:src="@drawable/call_now"
+            android:layout_marginRight="11dp"
+            android:layout_marginEnd="11dp"
+            android:id="@+id/callsecond"
+            android:onClick="callSecond"
+            android:layout_centerVertical="true"
+            android:layout_alignRight="@+id/textView89"
+            android:layout_alignEnd="@+id/textView89" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:id="@+id/relativeLayout10"
+        android:layout_below="@+id/include"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="37dp">
+        <android.support.v7.widget.CardView
+            android:id="@+id/card_vie5"
+            android:layout_gravity="center"
+            android:layout_width="100dp"
+            android:layout_height="150dp"
+            card_view:cardCornerRadius="4dp"
+            android:background="@color/socialLink"
+
+            android:layout_alignParentLeft="true">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/jhoota"
+                />
+        </android.support.v7.widget.CardView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mohammad ALI Mohammad"
+            android:textColor="@color/textColor"
+            android:layout_marginRight="12dp"
+            android:layout_marginEnd="12dp"
+            android:id="@+id/textView8"
+            android:layout_alignTop="@+id/callfirst"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            android:src="@drawable/call_now"
+            android:id="@+id/callfirst"
+            android:onClick="callFirst"
+            android:layout_marginLeft="30dp"
+            android:layout_marginStart="30dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignLeft="@+id/textView8"
+            android:layout_alignStart="@+id/textView8" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

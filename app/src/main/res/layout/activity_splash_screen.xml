@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_splash_screen"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/splashColor"
+    tools:context="mohammadicenter.com.mohammadicdcenter.activities.SplashScreen">
+
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/ico"
+        android:id="@+id/imageView22"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="98dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:src="@drawable/logo"
+        android:id="@+id/imageView2"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="38dp"
+        android:layout_below="@+id/imageView22"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Netroxtech IT Company"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/netroxtech"
+        android:layout_marginLeft="14dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/text_box_border"
+        android:layout_marginStart="14dp"
+        android:id="@+id/textView6"
+        android:onClick="goTonetroxtechWebiste"
+        android:layout_alignLeft="@+id/imageView22"
+        android:layout_alignStart="@+id/imageView22" />
+</RelativeLayout>

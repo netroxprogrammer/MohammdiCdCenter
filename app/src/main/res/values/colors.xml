@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#d32f2f</color>
+    <color name="colorPrimaryDark">#c72c2c</color>
+    <color name="colorAccent">#FFFFFF</color>
+    <color name="background">#d66401</color>
+    <color name="video">#0a4bb3</color>
+    <color name="news">#8bc34a</color>
+    <color name="live">#000000</color>
+    <color name="about">#e72222</color>
+    <color name="socialLink">#068706</color>
+    <color name="splashColor">#000000</color>
+    <color name="marqueeColor">#939090</color>
+    <color name="marqueeText">#fafafa</color>
+    <color name="textColor">#ffffff</color>
+    <color name="netroxtech">#fcc501</color>
+</resources>
